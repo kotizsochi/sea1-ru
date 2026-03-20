@@ -1,0 +1,9 @@
+/* Main entry CSS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@import './css/tokens.css';
+@import './css/reset.css';
+@import './css/layout.css';
+@import './css/animations.css';
+@import './css/components.css';
+@import './css/hero.css';

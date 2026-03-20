@@ -1,0 +1,42 @@
+# Sochi Event Agency (sea1.ru)
+## Project Overview
+Premium event agency website in Sochi. Focus heavily on minimalist design, modern aesthetics, and smooth animations.
+
+## Tech Stack
+- Frontend: Vanilla HTML5, modular CSS (BEM-like structure with CSS variables), Vanilla JavaScript.
+- Fonts: Montserrat (Weights: 300, 400, 500, 600, 700). Lighter weights preferred for premium feel.
+- Build Tool/Server: Vite (`npm run dev`).
+
+## File Structure
+- `index.html`: Главная страница.
+- `specialists/index.html`: Страница списка специалистов.
+- `services/index.html`: Страница услуг.
+- `about/index.html`: О компании.
+- `contacts/index.html`: Контакты.
+- `blog/index.html` (в планах): Блог для SEO.
+- `src/style.css`: Точка входа стилей.
+- `src/css/tokens.css`: CSS переменные (цвета, шрифты, отступы, z-index).
+- `src/css/layout.css`: Сетки и отступы.
+- `src/css/components.css`: Кнопки, карточки, меню, бейджи.
+- `src/css/hero.css`: Стили секций hero.
+
+## Current State & Recent Updates
+- **Typography**: Migrated to Montserrat. Reduced font weights globally for a more minimalist look.
+- **Navigation**: CSS-only hierarchical dropdown menu added for "Специалисты" (12 categories) and "Услуги" (6 categories) with glassmorphism effects.
+- **Icons**: User will replace current icons with flat icons manually.
+
+## Pending Tasks (Roadmap)
+1. **Hero Slider**: Add an animated slider to the main page hero section using 5 specific photos from the `photo/общие/` folder. Add captions (свадьба, певица выступает, гала-ужин, выступление танцоров).
+2. **Photo Distribution**: Place category cover photos logically across the site (services covers, specialists covers) from the new `photo/` directory.
+3. **Animations**: Apply "skills" animation rules (staggered entry, scroll-driven reveals, spring physics, split-screen scroll, kinetic typography) globally across the site.
+4. **Theme Toggle**: Implement a Dark/Light mode toggle in the navigation using CSS variables and localStorage.
+5. **Localization**: Implement RU/EN language toggle in the navigation.
+6. **SEO Blog**: Create a blog section with deep SEO-optimized articles (Огненное шоу, Декор, Детский праздник, Танцевальное шоу, Свадьба) with specific bolded keywords.
+7. **Instagram Photos**: User will manually add Instagram photos to the existing specialists' profiles.
+
+## UI/UX Rules (Antigravity SKILLS applied)
+- Avoid purely generic layouts (no standard 3-column flex rows, use CSS grid/masonry if applicable).
+- Avoid \#000 pure black; use off-black (e.g., `#0f172a` zinc-900).
+- Desaturated accent colors.
+- Smooth transitions for all interactive elements (200-300ms, use spring-like beziers).
+- Staggered entrances for list items and grids.
